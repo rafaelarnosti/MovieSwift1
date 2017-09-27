@@ -21,6 +21,7 @@ class MovieRegisterViewController: UIViewController {
     
     // MARK: - Properties
     var movie: Movie!
+    var smallImage: UIImage!
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -30,6 +31,10 @@ class MovieRegisterViewController: UIViewController {
             tfRating.text = "(movie.rating)"
             tfDuration.text = movie.duration
             tvSummary.text = movie.summary
+            
+            if let image = movie.poster as? UIImage{
+                ivPoster.image = image
+            }
             btAddUpdate.setTitle("Atualizar", for: .normal)
         }
     }
@@ -67,6 +72,9 @@ class MovieRegisterViewController: UIViewController {
         movie.rating = Double(tfRating.text!)!
         movie.summary = tvSummary.text
         movie.duration = tfDuration.text
+        if smallImage != nil{
+            movie.poster = smallImage
+        }
         do {
             try context.save()
         } catch {
@@ -106,4 +114,22 @@ class MovieRegisterViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
+    
+    
+}
+
+extension MovieRegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String: AnyObject]?) {
+        
+        let smallSize = CGSize(width: 300, height: 300)
+        
+        UIGraphicsBeginImageContext(smallSize)
+        image.draw(in: CGRect(x: 0, y: 0, width: smallSize.width, height: smallSize.height))
+        smallImage = UIGraphicsGetImageFromCurrentImageContext()
+        ivPoster.image = smallImage
+        
+        UIGraphicsEndImageContext()
+        dismiss(animated: true, completion: nil)
+    }
 }

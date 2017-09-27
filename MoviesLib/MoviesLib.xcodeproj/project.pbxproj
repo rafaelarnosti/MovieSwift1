@@ -50,6 +50,7 @@
 		AC70C4F61E742784005E598A /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4F51E742784005E598A /* Theater.swift */; };
 		AC70C4F81E743C94005E598A /* TheaterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4F71E743C94005E598A /* TheaterAnnotation.swift */; };
 		AC70C4FE1E748175005E598A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4FD1E748175005E598A /* WebViewController.swift */; };
+		ACD1BF9C1F7C629500CA84EB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1BF9B1F7C629500CA84EB /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		AC70C4F51E742784005E598A /* Theater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
 		AC70C4F71E743C94005E598A /* TheaterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterAnnotation.swift; sourceTree = "<group>"; };
 		AC70C4FD1E748175005E598A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		ACD1BF9B1F7C629500CA84EB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				07780D4C1E6D860E00BC3630 /* AppDelegate.swift */,
 				AC264C191E7CA30200F083F1 /* MoviesLib.xcdatamodeld */,
 				07780D501E6D860E00BC3630 /* Main.storyboard */,
+				ACD1BF9B1F7C629500CA84EB /* SettingsViewController.swift */,
 				07780D531E6D860E00BC3630 /* Assets.xcassets */,
 				07780D551E6D860E00BC3630 /* LaunchScreen.storyboard */,
 				07780D581E6D860E00BC3630 /* Info.plist */,
@@ -258,6 +261,7 @@
 				TargetAttributes = {
 					07780D481E6D860E00BC3630 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W9ZU5QNY6L;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -341,6 +345,7 @@
 				07780D4F1E6D860E00BC3630 /* MovieViewController.swift in Sources */,
 				AC264C1D1E7CABAE00F083F1 /* UIViewController+CoreData.swift in Sources */,
 				07780D4D1E6D860E00BC3630 /* AppDelegate.swift in Sources */,
+				ACD1BF9C1F7C629500CA84EB /* SettingsViewController.swift in Sources */,
 				AC70C4F11E74225E005E598A /* TheatersMapViewController.swift in Sources */,
 				AC264C1F1E7CBEB300F083F1 /* CategoriesViewController.swift in Sources */,
 			);
@@ -463,9 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9ZU5QNY6L;
 				INFOPLIST_FILE = MoviesLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericbrito.MoviesLib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelarnosti.MoviesLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -475,9 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W9ZU5QNY6L;
 				INFOPLIST_FILE = MoviesLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericbrito.MoviesLib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelarnosti.MoviesLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
