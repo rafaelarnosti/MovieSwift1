@@ -449,7 +449,6 @@
                     <connections>
                         <outlet property="scColors" destination="xcH-Lr-zVh" id="xCG-lm-T5n"/>
                         <outlet property="swAutoPlay" destination="pLc-4k-iZ4" id="TgA-i6-X4n"/>
-                        <outlet property="tfGeneral" destination="Fgl-Yo-4Sf" id="Zwg-D2-SkF"/>
                         <outlet property="tfGenre" destination="Fgl-Yo-4Sf" id="1e7-Bp-mg3"/>
                     </connections>
                 </viewController>
